@@ -7,6 +7,7 @@ public class Transfer implements MetodeBayar {
 
     @Override
     public int totalBayar(int totalBelanja) {
+        // Biaya administrasi transfer sebesar Rp2.500.
         return totalBelanja + 2500;
     }
 }
