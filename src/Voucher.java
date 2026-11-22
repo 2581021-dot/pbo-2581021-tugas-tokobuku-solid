@@ -1,6 +1,4 @@
-
 public class Voucher implements MetodeBayar {
-
     private int nilai;
 
     public Voucher(int nilai) {
@@ -9,11 +7,11 @@ public class Voucher implements MetodeBayar {
 
     @Override
     public String nama() {
-        return "Voucher Rp100.000";
+        return "Voucher";
     }
 
     @Override
     public int totalBayar(int totalBelanja) {
-        return totalBelanja - nilai;
+        return Math.max(0, totalBelanja - nilai);
     }
 }

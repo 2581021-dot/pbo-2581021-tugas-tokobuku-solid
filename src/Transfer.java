@@ -1,9 +1,8 @@
-
 public class Transfer implements MetodeBayar {
 
     @Override
     public String nama() {
-        return "Transfer (+Rp2.500)";
+        return "Transfer";
     }
 
     @Override
@@ -11,4 +10,3 @@ public class Transfer implements MetodeBayar {
         return totalBelanja + 2500;
     }
 }
-
